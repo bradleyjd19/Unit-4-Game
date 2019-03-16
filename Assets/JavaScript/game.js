@@ -85,13 +85,13 @@ $(document).ready(function() {
 
 
   var bgAudio = document.getElementById("bgAudio");
-  bgAudio.volume = 0.3;
+  bgAudio.volume = 0.2;
 
 
   var auraAudio = document.getElementById("auraAudio");
   $("#crystals").mouseenter(function() {
     auraAudio.play();
-    auraAudio.volume = 0.4;
+    auraAudio.volume = 0.3;
   })
   $("#crystals").mouseleave(function() {
     auraAudio.pause();

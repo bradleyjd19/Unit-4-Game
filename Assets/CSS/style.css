@@ -2,15 +2,27 @@
   box-sizing: border-box;
 }
 
+
 @font-face {
   font-family: "PerryGothic";
   src: url("../Fonts/PERRYGOT.TTF");
 }
 
+
 body {
   background: url("../Images/crystalcave.jpg");
   background-size: cover;
 }
+
+
+#openText {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "PerryGothic", cursive;
+  line-height: 30px;
+  margin: 10px 20px;
+}
+
 
 #targetNum,
 #userNum,
@@ -18,19 +30,36 @@ body {
 #totalLosses,
 #gameResult {
   margin: 50px;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "PerryGothic", cursive;
   color: aliceblue;
   font-weight: bold;
+  padding: 15px;
+  border: 1px solid aliceblue;
+  width: 400px;
 }
+
+
+#totalWins,
+#totalLosses {
+  margin-top: 10px;
+  float: left;
+}
+
+#gameResult {
+  border: none;
+}
+
 
 #crystals {
   display: flex;
+  width: 800px;
 }
 
+
 .crystal {
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
   margin-left: 40px;
   }
 
