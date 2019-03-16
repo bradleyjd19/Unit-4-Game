@@ -82,16 +82,15 @@ $(document).ready(function() {
   gameStart();
   
   var bgAudio = document.getElementById("bgAudio");
-  bgAudio.volume = 0.2;
+  bgAudio.volume = 0.3;
   
   var auraAudio = document.getElementById("auraAudio");
     $("#crystals").mouseenter(function() {
       auraAudio.play();
-      auraAudio.volume = 0.3;
+      auraAudio.volume = 0.4;
     })
     $("#crystals").mouseleave(function() {
       auraAudio.pause();
     })
   
-  
-  });
+});
