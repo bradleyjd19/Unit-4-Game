@@ -1,3 +1,7 @@
+var bgAudio = document.getElementById("bgAudio");
+  bgAudio.volume = 0.3;
+
+
 $(document).ready(function() {
 
   var crystals = [
@@ -20,33 +24,37 @@ $(document).ready(function() {
     },
   ];
   
+
   var targetNum = 0;
   var userTotal = 0;
   var wins = 0;
   var losses = 0;
   
-  
-  
+    
   function randNum (min, max) {
     return Math.floor(Math.random() * (max-min)) + min;
   }
   
+
   function resetGame() {
     $("#crystals").empty();
     userTotal = 0;  
     gameStart();
   }
   
+
   function gameWin() {
     wins++;  
     $("#gameResult").text("Well done, you are a Master of the Crystals!");
   }
   
+
   function gameLose() {
     losses++;
     $("#gameResult").text("The Power of the Crystals has Overcome your Mathematical Sorcery!");
   }
   
+
   // Choose target number, assign values to each crystal
   function gameStart() {
     targetNum = randNum(19, 120);
@@ -79,18 +87,18 @@ $(document).ready(function() {
     })
   }
   
+
+  var auraAudio = document.getElementById("auraAudio");
+  $("#crystals").mouseenter(function() {
+    auraAudio.play();
+    auraAudio.volume = 0.4;
+  })
+  $("#crystals").mouseleave(function() {
+    auraAudio.pause();
+  })  
+ 
+
   gameStart();
   
-  var bgAudio = document.getElementById("bgAudio");
-  bgAudio.volume = 0.3;
-  
-  var auraAudio = document.getElementById("auraAudio");
-    $(".crystal").mouseenter(function() {
-      auraAudio.play();
-      auraAudio.volume = 0.4;
-    })
-    $(".crystal").mouseleave(function() {
-      auraAudio.pause();
-    })
-  
+
 });
