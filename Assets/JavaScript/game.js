@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  var bgAudio = document.getElementById("bgAudio");
+    bgAudio.play();
+    bgAudio.volume = 0.2;
+
   var crystals = [
     
     crystal1 = {
@@ -84,8 +88,7 @@ $(document).ready(function() {
   }
 
 
-  var bgAudio = document.getElementById("bgAudio");
-    bgAudio.volume = 0.2;
+  
 
 
   var auraAudio = document.getElementById("auraAudio");
