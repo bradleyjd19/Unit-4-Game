@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Game</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Reset and Link CSS -->
+  <link rel="stylesheet" type="text/css" href="./Assets/CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="favicon/png" href="./Assets/Images/favicon.jpg">
+
+</head>
+
+<body>
+
+  <audio id="bgAudio" src="./Assets/Sounds/crystalBackground.mp3" autoplay loop>
+    <embed
+      src="./Assets/Sounds/crystalBackground.mp3"
+      hidden="true">
+  </audio>
+
+  <audio id="auraAudio" src="./Assets/Sounds/aura.wav" loop>
+    <embed
+      src="./Assets/Sounds/aura.wav"
+      hidden="true">
+  </audio>
+
+  <div id="targetNum"></div>
+
+  <div id="crystals"></div>
+
+  <div id="userNum"></div>
+
+  <div id="totalWins"></div>
+
+  <div id="totalLosses"></div>
+
+  <div id="gameResult"></div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Assets/JavaScript/game.js"></script>
+  
+</body>
+</html>
