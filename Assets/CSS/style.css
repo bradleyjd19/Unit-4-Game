@@ -14,8 +14,29 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-family: "PerryGothic", cursive;
+  font-size: 100px;
+  text-align: center;
+  color: aliceblue;
+  margin: 100px;
+}
 
-#openText {
+
+#buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+
+#startButton {
+  font-family: "PerryGothic", cursive;
+  font-size: 30px;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+p {
   color: aliceblue;
   font-size: 20px;
   font-family: "PerryGothic", cursive;
@@ -40,10 +61,16 @@ body {
 }
 
 
+#gameResult {
+  width: 100%;
+}
+
+
 #totalWins,
 #totalLosses {
   margin-top: 10px;
   float: left;
+  clear: both;
 }
 
 #gameResult {

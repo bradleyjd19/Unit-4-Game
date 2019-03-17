@@ -1,8 +1,5 @@
 $(document).ready(function() {
-
-  var bgAudio = document.getElementById("bgAudio");
-    bgAudio.play();
-    bgAudio.volume = 0.2;
+  
 
   var crystals = [
     
@@ -30,7 +27,25 @@ $(document).ready(function() {
   var wins = 0;
   var losses = 0;
   
-    
+
+  function startMenu() {
+    $("p").hide();
+    $("div").hide();
+    $("#buttonContainer").show();
+    startClick();
+  }
+
+
+  function startClick() {
+    $("#startButton").on("click", function() {
+      gameStart();
+    })
+  }
+
+
+  startMenu();
+
+
   function randNum (min, max) {
     return Math.floor(Math.random() * (max-min)) + min;
   }
@@ -57,6 +72,16 @@ $(document).ready(function() {
 
   // Choose target number, assign values to each crystal
   function gameStart() {
+    $("h1").hide();
+    $("#buttonContainer").hide();
+    $("button").hide();
+    $("p").show();
+    $("div").show();
+
+    var bgAudio = document.getElementById("bgAudio");
+    bgAudio.play();
+    bgAudio.volume = 0.3;
+
     targetNum = randNum(19, 120);
     $("#targetNum").text("Target Number: " + targetNum);
     $("#userNum").text("Your Total: " + userTotal);
@@ -88,20 +113,14 @@ $(document).ready(function() {
   }
 
 
-  
-
-
   var auraAudio = document.getElementById("auraAudio");
   $("#crystals").mouseenter(function() {
     auraAudio.play();
-    auraAudio.volume = 0.3;
+    auraAudio.volume = 0.4;
   })
   $("#crystals").mouseleave(function() {
     auraAudio.pause();
-  })  
- 
-
-  gameStart();
+  }) 
   
 
 });

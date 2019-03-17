@@ -9,22 +9,30 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Reset and Link CSS -->
-  <link rel="stylesheet" type="text/css" href="./Assets/CSS/reset.css">
-  <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
   <!-- Favicon -->
-  <link rel="icon" type="favicon/png" href="./Assets/Images/favicon.jpg">
+  <link rel="icon" type="favicon/png" href="Assets/Images/favicon.jpg">
 
 </head>
 
 <body>
 
-  <audio id="bgAudio" src="Assets/Sounds/background.mp3" type="audio/mpeg" loop="loop" autoplay="autoplay">
+  <audio id="bgAudio" src="Assets/Sounds/background.mp3" type="audio/mpeg" loop="loop">
   </audio>
 
   <audio id="auraAudio" src="Assets/Sounds/aura.wav" type="audio/wav" loop="loop">
   </audio>
 
-  <p id="openText">You have wandered in to the depths of the Crystal Cave and are now trapped! Your only hope for escape is to outwit the mystical forces within. The cyrstals you see before you hold the secret combinations to guide your way. Clicking on one will add its hidden value to Your Total. Choose the correct combination of crystals to match Your Total to the Target Number in order to win! Reach ten wins and the caverns will guide thee on thy lofty quest home, but BEWARE....Ten losses and the crystals will entrap your soul forever!</p>
+  <p id="openText">You have wandered in to the depths of the Crystal Caverns and are now trapped! Your only hope for escape is to outwit the mystical forces within. The cyrstals you see before you hold the secret combinations to guide your way. Clicking on one will add its hidden value to Your Total. Choose the correct combination of crystals to match Your Total to the Target Number in order to win! But BEWARE....lose and the crystals will entrap your soul forever!</p>
+
+  <p>Scroll Down...</p>
+
+  <h1>The Crystal Caverns</h1>
+
+  <div id="buttonContainer">
+    <button id="startButton" input="button" class="btn  btn-info">Begin</button>
+  </div>
 
   <div id="targetNum"></div>
 
