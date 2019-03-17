@@ -80,7 +80,7 @@ $(document).ready(function() {
 
     var bgAudio = document.getElementById("bgAudio");
     bgAudio.play();
-    bgAudio.volume = 0.3;
+    bgAudio.volume = 0.2;
 
     targetNum = randNum(19, 120);
     $("#targetNum").text("Target Number: " + targetNum);
